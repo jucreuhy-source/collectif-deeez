@@ -1,0 +1,15 @@
+# ─── macOS ───────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# ─── Sources locales (non publiées) ──────────
+# Dossiers sources originaux — déjà traités dans assets/
+Brand Assets/
+Images/
+
+# ─── Claude Code (config locale) ─────────────
+.claude/

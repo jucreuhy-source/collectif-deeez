@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collectif Design — Menuiserie sur mesure & Aménagement intérieur</title>
+  <meta name="description" content="Collectif Design, 10 ans d'expertise en mobilier sur mesure, cuisines, dressing, portes, revêtements et aménagements professionnels. Belgique." />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ─── LOADER ─────────────────────────────── -->
+  <div class="loader" id="loader">
+    <picture>
+      <source srcset="assets/logo.avif" type="image/avif" />
+      <img src="assets/logo.avif" alt="Collectif Design" class="loader__logo" />
+    </picture>
+    <div class="loader__bar"><div class="loader__bar-fill"></div></div>
+  </div>
+
+  <!-- ─── NAV ───────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#accueil" class="nav__logo">
+        <picture>
+          <source srcset="assets/logo.avif" type="image/avif" />
+          <img src="assets/logo.avif" alt="Collectif Design" />
+        </picture>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#chantiers">Chantiers</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact" class="nav__cta">Contact</a></li>
+      </ul>
+      <button class="nav__burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ──────────────────────────────── -->
+  <section class="hero" id="accueil">
+
+    <!-- Photo plein écran en fond -->
+    <div class="hero__bg">
+      <img src="assets/hero.png" alt="" />
+      <div class="hero__overlay"></div>
+    </div>
+
+    <!-- Contenu centré -->
+    <div class="hero__content">
+
+      <!-- Logo grand & centré -->
+      <div class="hero__logo reveal">
+        <img src="assets/logo-hd.png" alt="Collectif Design" />
+      </div>
+
+      <!-- Headline + animation -->
+      <div class="hero__headline reveal">
+        <h1>
+          Votre espace,<br />
+          <span class="accent" id="typewriter-word"></span><span class="typewriter-cursor" id="typewriter-cursor">|</span>
+        </h1>
+      </div>
+
+      <!-- Sous-titre -->
+      <p class="hero__sub reveal">
+        Menuiserie sur mesure · Cuisines · Dressing · Revêtements
+      </p>
+
+      <!-- CTAs -->
+      <div class="hero__actions reveal">
+        <a href="#realisations" class="btn btn--orange">Nos réalisations</a>
+        <a href="#contact" class="btn btn--ghost-white">Demander un devis</a>
+      </div>
+
+      <!-- Badge 10 ans -->
+      <span class="hero__badge reveal">Depuis 10 ans en Belgique</span>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll">
+      <span>Défiler</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+
+  </section>
+
+  <!-- ─── STATS ─────────────────────────────── -->
+  <div class="stats">
+    <div class="stats__inner">
+      <div class="stats__item reveal">
+        <strong>500<span>+</span></strong>
+        <p>Projets réalisés</p>
+      </div>
+      <div class="stats__sep"></div>
+      <div class="stats__item reveal">
+        <strong>10</strong>
+        <p>Ans d'expertise</p>
+      </div>
+      <div class="stats__sep"></div>
+      <div class="stats__item reveal">
+        <strong>6</strong>
+        <p>Domaines d'excellence</p>
+      </div>
+      <div class="stats__sep"></div>
+      <div class="stats__item reveal">
+        <strong>100<span>%</span></strong>
+        <p>Sur mesure</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── SERVICES ──────────────────────────── -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Nos savoir-faire</span>
+        <h2>Ce que nous <span class="accent">créons</span></h2>
+        <p>Du premier rendez-vous à la pose finale, chaque réalisation est unique et pensée pour vous.</p>
+      </div>
+      <div class="services__grid">
+
+        <div class="svc reveal">
+          <div class="svc__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="6" y="10" width="36" height="28" rx="2"/>
+              <path d="M6 20h36M14 20v18M34 20v18"/>
+            </svg>
+          </div>
+          <h3>Cuisines italiennes</h3>
+          <p>Design, qualité premium et fonctionnalité — nos cuisines sont conçues pour durer et impressionner.</p>
+        </div>
+
+        <div class="svc reveal">
+          <div class="svc__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="8" y="6" width="32" height="36" rx="1"/>
+              <path d="M8 18h32M8 30h32M16 6v36"/>
+              <rect x="20" y="20" width="10" height="8"/>
+            </svg>
+          </div>
+          <h3>Mobilier sur mesure</h3>
+          <p>Bibliothèques, armoires, rangements — chaque meuble est fabriqué pour s'adapter parfaitement à votre espace.</p>
+        </div>
+
+        <div class="svc reveal">
+          <div class="svc__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="10" y="6" width="28" height="36" rx="1"/>
+              <path d="M22 6v36M10 18h12M10 30h12"/>
+              <circle cx="18" cy="24" r="2.5"/>
+            </svg>
+          </div>
+          <h3>Dressing</h3>
+          <p>Penderies, tiroirs, niches — votre dressing sur mesure optimisé selon vos habitudes et votre espace.</p>
+        </div>
+
+        <div class="svc reveal">
+          <div class="svc__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="10" y="4" width="28" height="40" rx="1"/>
+              <path d="M10 4v40M38 4v40"/>
+              <circle cx="30" cy="24" r="3"/>
+              <path d="M10 4l4 5M38 4l-4 5"/>
+            </svg>
+          </div>
+          <h3>Porte-parclose</h3>
+          <p>Menuiseries intérieures sur mesure avec des finitions soignées, en bois massif ou dérivés.</p>
+        </div>
+
+        <div class="svc reveal">
+          <div class="svc__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="4" y="4" width="40" height="40"/>
+              <path d="M4 16h40M4 28h40M16 4v40M28 4v40"/>
+            </svg>
+          </div>
+          <h3>Revêtement sol & mur</h3>
+          <p>Parquet, carrelage, boiseries murales — nous sélectionnons et posons les meilleurs matériaux.</p>
+        </div>
+
+        <div class="svc reveal">
+          <div class="svc__icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M8 38V22l16-14 16 14v16"/>
+              <rect x="18" y="28" width="12" height="10"/>
+              <path d="M8 38h32"/>
+            </svg>
+          </div>
+          <h3>Mobilier spécifique</h3>
+          <p>Comptoirs, banques d'accueil, agencements pro — tous vos projets spéciaux réalisés avec exigence.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── RÉALISATIONS ──────────────────────── -->
+  <section class="gallery" id="realisations">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Portfolio</span>
+        <h2>Nos <span class="accent">réalisations</span></h2>
+      </div>
+    </div>
+    <div class="gallery__grid">
+
+      <div class="gallery__item gallery__item--wide reveal" data-cat="agencement">
+        <img src="assets/real-boutique.jpg" alt="Aménagement boutique sur mesure" loading="lazy" />
+        <div class="gallery__overlay">
+          <span>Agencement commercial</span>
+          <h3>Boutique — Mobilier & revêtements</h3>
+        </div>
+      </div>
+
+      <div class="gallery__item reveal" data-cat="menuiserie">
+        <img src="assets/real-comptoir.jpg" alt="Comptoir sur mesure en cours" loading="lazy" />
+        <div class="gallery__overlay">
+          <span>Mobilier spécifique</span>
+          <h3>Comptoir d'accueil en fabrication</h3>
+        </div>
+      </div>
+
+      <div class="gallery__item reveal" data-cat="facade">
+        <img src="assets/real-facade.jpg" alt="Rénovation façade immeuble historique" loading="lazy" />
+        <div class="gallery__overlay">
+          <span>Rénovation</span>
+          <h3>Immeuble historique — Menuiserie extérieure</h3>
+        </div>
+      </div>
+
+      <div class="gallery__item gallery__item--wide reveal" data-cat="menuiserie">
+        <img src="assets/real-menuiserie.jpg" alt="Chantier menuiserie Collectif Design" loading="lazy" />
+        <div class="gallery__overlay">
+          <span>Menuiserie sur mesure</span>
+          <h3>Pose de menuiseries extérieures</h3>
+        </div>
+      </div>
+
+      <div class="gallery__item reveal" data-cat="construction">
+        <img src="assets/real-chantier-grue.jpg" alt="Grand chantier de construction" loading="lazy" />
+        <div class="gallery__overlay">
+          <span>Construction</span>
+          <h3>Chantier grand œuvre</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── PROCESS ───────────────────────────── -->
+  <section class="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Notre méthode</span>
+        <h2>De l'idée à la <span class="accent">réalisation</span></h2>
+      </div>
+      <div class="process__grid">
+        <div class="process__step reveal">
+          <div class="process__num">01</div>
+          <h3>Écoute & conseil</h3>
+          <p>Un premier rendez-vous pour comprendre vos besoins, visualiser votre espace et définir votre budget.</p>
+        </div>
+        <div class="process__step reveal">
+          <div class="process__num">02</div>
+          <h3>Conception</h3>
+          <p>Nos équipes créent les plans et visuels 3D pour valider chaque détail avant la fabrication.</p>
+        </div>
+        <div class="process__step reveal">
+          <div class="process__num">03</div>
+          <h3>Fabrication</h3>
+          <p>Chaque pièce est fabriquée en atelier avec des matériaux soigneusement sélectionnés.</p>
+        </div>
+        <div class="process__step reveal">
+          <div class="process__num">04</div>
+          <h3>Pose & finitions</h3>
+          <p>Notre équipe installe et peaufine chaque détail jusqu'à votre entière satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CHANTIERS ─────────────────────────── -->
+  <section class="chantiers" id="chantiers">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">En action</span>
+        <h2>Nos <span class="accent">chantiers</span></h2>
+        <p>Un aperçu de nos équipes au travail sur des projets d'envergure à travers la Belgique.</p>
+      </div>
+    </div>
+    <div class="chantiers__grid">
+      <div class="chantiers__item reveal">
+        <img src="assets/chantier-02.jpg" alt="Chantier Collectif Design" loading="lazy" />
+      </div>
+      <div class="chantiers__item reveal">
+        <img src="assets/chantier-04.jpg" alt="Travaux de sol béton" loading="lazy" />
+      </div>
+      <div class="chantiers__item reveal">
+        <img src="assets/chantier-03.jpg" alt="Rénovation grande bâtisse" loading="lazy" />
+      </div>
+      <div class="chantiers__item reveal">
+        <img src="assets/chantier-01.jpg" alt="Chantier construction neuve" loading="lazy" />
+      </div>
+      <div class="chantiers__item reveal">
+        <img src="assets/chantier-05.jpg" alt="Chantier grues" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── À PROPOS ──────────────────────────── -->
+  <section class="about" id="apropos">
+    <div class="about__inner">
+      <div class="about__img reveal">
+        <img src="assets/real-comptoir.jpg" alt="Artisans Collectif Design au travail" />
+        <div class="about__img-card">
+          <picture>
+            <source srcset="assets/logo.avif" type="image/avif" />
+            <img src="assets/logo.avif" alt="Logo Collectif Design" />
+          </picture>
+        </div>
+      </div>
+      <div class="about__content">
+        <span class="tag reveal">Notre histoire</span>
+        <h2 class="reveal">10 ans à vos côtés pour<br/><span class="accent">vos projets</span></h2>
+        <p class="reveal">
+          Depuis dix ans, Collectif Design est à votre écoute pour concrétiser vos projets d'aménagement intérieur et de construction. Fondée sur des valeurs d'exigence, de créativité et de proximité, notre équipe d'artisans qualifiés donne vie à vos idées.
+        </p>
+        <p class="reveal">
+          Spécialisés en menuiserie sur mesure et agencement, nous intervenons chez les particuliers comme dans les espaces professionnels, partout en Belgique.
+        </p>
+        <div class="about__values reveal">
+          <div class="about__value">
+            <div class="about__value-dot"></div>
+            <div>
+              <strong>Sur mesure</strong>
+              <span>Chaque projet est unique, pensé pour vous</span>
+            </div>
+          </div>
+          <div class="about__value">
+            <div class="about__value-dot"></div>
+            <div>
+              <strong>Qualité premium</strong>
+              <span>Matériaux nobles, finitions irréprochables</span>
+            </div>
+          </div>
+          <div class="about__value">
+            <div class="about__value-dot"></div>
+            <div>
+              <strong>À votre écoute</strong>
+              <span>Accompagnement personnalisé de A à Z</span>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn--orange reveal">Démarrer mon projet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+
+        <div class="contact__left reveal">
+          <span class="tag tag--light">Parlons de votre projet</span>
+          <h2>Contactez-<span class="accent">nous</span></h2>
+          <p>Premier rendez-vous gratuit et sans engagement. Nous sommes disponibles du lundi au vendredi, de 9h à 18h.</p>
+          <div class="contact__infos">
+            <a href="mailto:info@collectifdesign.be" class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M4 4h16v16H4z" rx="2"/>
+                  <polyline points="4,4 12,13 20,4"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <span>info@collectifdesign.be</span>
+              </div>
+            </a>
+            <a href="tel:+32484290506" class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .82h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Téléphone</strong>
+                <span>+32 484 29 05 06</span>
+              </div>
+            </a>
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Zone d'intervention</strong>
+                <span>Belgique</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Prénom</label>
+              <input type="text" id="firstName" placeholder="Votre prénom" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Nom</label>
+              <input type="text" id="lastName" placeholder="Votre nom" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="votre@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" placeholder="+32 000 00 00 00" />
+          </div>
+          <div class="form-group">
+            <label for="service">Type de projet</label>
+            <select id="service">
+              <option value="">Sélectionnez un service</option>
+              <option>Cuisine italienne</option>
+              <option>Mobilier sur mesure</option>
+              <option>Dressing</option>
+              <option>Porte-parclose</option>
+              <option>Revêtement sol & mur</option>
+              <option>Mobilier spécifique</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Votre projet</label>
+            <textarea id="message" rows="4" placeholder="Décrivez votre projet..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--orange btn--full">
+            Envoyer ma demande
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+          <p class="form-note">Réponse sous 24h — Devis gratuit et sans engagement</p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <picture>
+          <source srcset="assets/logo.avif" type="image/avif" />
+          <img src="assets/logo.avif" alt="Collectif Design" class="footer__logo" />
+        </picture>
+        <p>Menuiserie sur mesure & aménagement intérieur.<br />Depuis 10 ans en Belgique.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/collectif_design/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/collectifdesign.be/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Cuisines italiennes</a></li>
+            <li><a href="#services">Mobilier sur mesure</a></li>
+            <li><a href="#services">Dressing</a></li>
+            <li><a href="#services">Porte-parclose</a></li>
+            <li><a href="#services">Revêtements</a></li>
+            <li><a href="#services">Mobilier spécifique</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Entreprise</h4>
+          <ul>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#chantiers">Chantiers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@collectifdesign.be">info@collectifdesign.be</a></li>
+            <li><a href="tel:+32484290506">+32 484 29 05 06</a></li>
+            <li><span>Belgique</span></li>
+            <li><span>Lun–Ven · 9h–18h</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Collectif Design · Tous droits réservés</p>
+      <div>
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
