@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 
 
-  // ─── Scroll reveal ──────────────────────────
+  // ─── Scroll reveal (général) ─────────────────
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
@@ -129,6 +129,59 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+
+  // ─── Services — animation en cascade ─────────
+  // Chaque carte entre 110ms après la précédente.
+  // À l'intérieur : icône (pop), titre (slide), texte (fade) en séquence.
+  const STAGGER    = 110;  // ms entre chaque carte
+  const BASE_ICON  = 260;  // ms après la carte pour l'icône
+  const BASE_TITLE = 360;  // ms après la carte pour le titre
+  const BASE_TEXT  = 440;  // ms après la carte pour le texte
+
+  const svcCards = document.querySelectorAll('.svc-anim');
+
+  const svcObserver = new IntersectionObserver((entries) => {
+    // On déclenche dès qu'UNE carte de la grille est visible
+    // puis on enchaîne toutes les cartes non-encore animées
+    const anyVisible = entries.some(e => e.isIntersecting);
+    if (!anyVisible) return;
+
+    svcObserver.disconnect(); // une seule passe
+
+    svcCards.forEach((card, i) => {
+      const cardDelay = i * STAGGER;
+
+      // 1. La carte elle-même
+      setTimeout(() => card.classList.add('svc-visible'), cardDelay);
+
+      // 2. Icône — délai relatif à la carte + override inline
+      const icon = card.querySelector('.svc__icon');
+      if (icon) {
+        icon.style.transitionDelay = `${BASE_ICON}ms`;
+      }
+
+      // 3. Titre
+      const h3 = card.querySelector('h3');
+      if (h3) h3.style.transitionDelay = `${BASE_TITLE}ms`;
+
+      // 4. Texte
+      const p = card.querySelector('p');
+      if (p) p.style.transitionDelay = `${BASE_TEXT}ms`;
+
+      // Remettre les delays à 0 une fois visible
+      // pour que le hover/unhover CSS reste fluide
+      setTimeout(() => {
+        if (icon) icon.style.transitionDelay  = '0ms';
+        if (h3)   h3.style.transitionDelay    = '0ms';
+        if (p)    p.style.transitionDelay     = '0ms';
+      }, cardDelay + BASE_TEXT + 450);
+    });
+
+  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+  // Observer seulement la première carte — suffit à déclencher la cascade
+  if (svcCards.length) svcObserver.observe(svcCards[0]);
 
 
   // ─── Smooth anchor scroll (offset nav) ──────
