@@ -48,7 +48,12 @@
 
     <!-- Photo plein écran en fond -->
     <div class="hero__bg">
-      <img src="assets/hero.png" alt="" />
+      <picture>
+        <!-- Mobile (≤ 768px) → image portrait recadrée -->
+        <source srcset="assets/hero-mobile.png" media="(max-width: 768px)" />
+        <!-- Desktop → image paysage originale -->
+        <img src="assets/hero.png" alt="" />
+      </picture>
       <div class="hero__overlay"></div>
     </div>
 
